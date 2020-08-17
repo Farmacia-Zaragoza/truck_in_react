@@ -1,0 +1,386 @@
+/* Flex slider */
+#slider .flex-direction-nav {
+    display: none;
+}
+.flexslider {
+    margin: 0px;
+}
+#carousel .flex-direction-nav a {
+    padding: 10px 9px;
+    background: #333;
+    border-radius: 50px;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+}
+.flex-direction-nav .flex-prev {
+    left: 0px;
+}
+.flex-direction-nav .flex-next {
+    right: 0px;
+    text-align: right;
+}
+.flexslider:hover .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 0;
+}
+.flexslider:hover .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 0px;
+}
+
+.flex-direction-nav a:before {
+    font-size: 20px;
+    color: #fff;
+}
+#carousel {
+    padding: 0 50px;
+    margin: 0;
+}
+.flex-direction-nav .flex-disabled {
+    opacity: 1!important;
+    filter: alpha(opacity=1);
+    cursor: default;
+    z-index: 9999;
+}
+
+/* slider caption */
+.slider_caption_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1D374D;
+    z-index: 99;
+    padding: 10px;
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+}
+.slider_caption_inner {
+    border: 1px solid #34ccff;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.email_phone_wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 5px 10px 5px;
+}
+.email, .phone {
+    width: 100%;
+    height: 35px;
+    position: relative;
+}
+.email {
+    transform: translateX(100px);
+}
+.phone {
+    transform: translateX(-100px);
+}
+.email_icon, .phone_icon {
+    position: absolute;
+    background: #34ccff;
+    width: 49px;
+    height: 49px;
+    top: -7px;
+    border-radius: 50%;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.email_icon {
+    left: 0px;
+}
+.phone_icon {
+    right: 0px;
+}
+.email_content {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    padding-left: 49px;
+    box-sizing: border-box;
+}
+.email_content_scroll {
+    position: relative;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+.left_email_handler, .right_email_handler {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+.left_email_handler {
+    left: 0;
+    font-size: 24px;
+    padding: 6px 0px;
+}
+.right_email_handler {
+    right: 5px;
+    font-size: 24px;
+    padding: 6px 0px;
+}
+.email_scroll {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 9px 0;
+    box-sizing: border-box;
+}
+.email_scroll img {
+    height: 20px;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.email_scroll::-webkit-scrollbar {
+    display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.email_scroll {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.phone_content {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    padding-right: 49px;
+    box-sizing: border-box;
+}
+.phone_content_inner {
+    padding: 7px 20px;
+    box-sizing: border-box;
+}
+.phone_content_inner img {
+    height: 24px;
+    width: 100%;
+}
+#slider:hover .slider_caption_wrapper {
+    visibility: visible;
+    opacity: 1;
+}
+#slider:hover .email, #slider:hover .phone {
+    transform: translateX(0px);
+    transition: .3s;
+}
+
+
+/* caption */
+.caption_inner_scroll {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+/* .caption_inner_scroll::-webkit-scrollbar {
+    display: none;
+} */
+/* Hide scrollbar for IE, Edge and Firefox */
+/* .caption_inner_scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+} */
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.caption_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 28px 5px 60px 5px;
+}
+.caption_inner_scroll {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+    color: #fff;
+}
+.caption_inner_scroll p {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 10px;
+}
+.caption_inner_content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.up_content_handler, .down_content_handler {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #fff;
+}
+.up_content_handler {
+    top: -25px;
+}
+.down_content_handler {
+    bottom: -25px;
+}
+
+@media only screen and (min-width: 1301px) {
+    .email_phone_wrapper {
+        bottom: 5px;
+    }
+    .caption_wrapper {
+        padding: 51px 5px 87px 5px;
+    }
+    .caption_inner_scroll p {
+        font-size: 35px;
+    }
+    .up_content_handler span, .down_content_handler span{
+        font-size: 40px;
+    }
+    .up_content_handler {
+        top: -40px;
+    }
+    .down_content_handler {
+        bottom: -40px;
+    }
+
+}
+@media only screen and (min-width: 2001px) {
+    .email_phone_wrapper {
+        bottom: 18px;
+    }
+    .email, .phone {
+        height: 70px;
+    }
+    .email_icon, .phone_icon {
+        width: 100px;
+        height: 100px;
+        top: -18px;
+        font-size: 55px;
+        padding: 20px 0;
+        border: 4px solid #fff;
+    }
+    .email_content {
+        padding-left: 110px;
+    }
+    .left_email_handler {
+        left: 0;
+        font-size: 50px;
+        padding: 12px 0px;
+    }
+    .right_email_handler {
+        right: 12px;
+        font-size: 50px;
+        padding: 12px 0px;
+    }
+    .email_scroll {
+        padding: 21px 0;
+    }
+    .email_scroll img {
+        height: 38px;
+    }
+    .phone_content_inner {
+        padding: 7px 70px;
+        box-sizing: border-box;
+    }
+    .phone_content_inner img {
+        height: 51px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 3001px) {
+    #carousel {
+        padding: 30px 150px;
+        margin: 0;
+    }
+    #carousel .flex-direction-nav a {
+        padding: 43px 17px;
+        width: 100px;
+        height: 100px;
+    }
+    .flex-direction-nav a:before {
+        font-size: 80px;
+        color: #fff;
+    }
+}
+
+
+@media only screen and (min-width: 4001px) {
+    #carousel {
+        padding: 30px 150px;
+        margin: 0;
+    }
+    #carousel .flex-direction-nav a {
+        padding: 43px 17px;
+        width: 100px;
+        height: 100px;
+    }
+    .flex-direction-nav a:before {
+        font-size: 80px;
+        color: #fff;
+    }
+    .email_phone_wrapper {
+        bottom: 18px;
+    }
+    .email, .phone {
+        height: 160px;
+    }
+    .email_icon, .phone_icon {
+        width: 200px;
+        height: 200px;
+        top: -24px;
+        font-size: 120px;
+        padding: 32px 0;
+        border: 10px solid #fff;
+    }
+    .email_content {
+        padding-left: 253px;
+    }
+    .left_email_handler {
+        left: -30px;
+        font-size: 112px;
+        padding: 27px 0px;
+    }
+    .right_email_handler {
+        right: 12px;
+        font-size: 112px;
+        padding: 27px 0px;
+    }
+    .email_scroll {
+        padding: 21px 0;
+    }
+    .email_scroll img {
+        height: 125px;
+    }
+    .phone_content_inner {
+        padding: 36px 172px;
+        box-sizing: border-box;
+    }
+    .phone_content_inner img {
+        height: 86px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .phone_content_inner {
+        padding: 7px 0px 7px 9px;
+        box-sizing: border-box;
+    }
+}
+@media only screen and (max-width: 570px) {
+    .phone_content_inner {
+        padding: 7px 0px 7px 9px;
+        box-sizing: border-box;
+    }
+}

@@ -1,0 +1,10 @@
+/* Header */
+.ui.menu .item:before {
+  width: 0px;
+}
+
+/* Mini trucks */
+.float_right {
+  float: right;
+}
+

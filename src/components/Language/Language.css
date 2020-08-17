@@ -1,0 +1,94 @@
+.language_wrapper {
+    position: relative;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+.language_inner_scroll {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /* width: 80%;
+    margin: 0 auto; */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.language_inner_scroll::-webkit-scrollbar {
+    display: none;
+}
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+.language_inner_scroll {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.handleLeft {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 99;
+    text-align: center;
+    cursor: pointer;
+}
+.handleRight {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 99;
+    text-align: center;
+    cursor: pointer;
+}
+.handleLeft, .handleRight {
+    padding: 12px 0;
+}
+
+@media only screen and (min-width: 1301px) {
+    .language_wrapper {
+        padding: 0 100px;
+        margin: 10px 0;
+    }
+    .handleLeft, .handleRight {
+        padding: 20px 0;
+    }
+}
+@media only screen and (min-width: 2001px) {
+    .language_wrapper {
+        padding: 0 100px;
+        margin: 20px 0;
+    }
+    .handleLeft, .handleRight {
+        padding: 20px 0;
+    }
+}
+
+@media only screen and (min-width: 3001px) {
+    .language_wrapper {
+        padding: 0 180px;
+        margin: 30px 0;
+    }
+    .handleLeft, .handleRight {
+        padding: 45px 0;
+    }
+}
+
+
+@media only screen and (min-width: 4001px) {
+    .language_wrapper {
+        padding: 0 250px;
+        margin: 50px 0;
+    }
+    .handleLeft, .handleRight {
+        padding: 80px 0;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .language_wrapper {
+        margin-bottom: 10px;
+    }
+    .handleLeft, .handleRight {
+        padding: 12px 0;
+    }
+}
