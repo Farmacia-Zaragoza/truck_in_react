@@ -65,21 +65,21 @@ class FlexSlider extends Component {
                                     <Grid.Column>
                                         <div className="email">
                                             <div className="email_icon">
-                                                <i class="fas fa-envelope"></i>
+                                                <i className="fas fa-envelope"></i>
                                             </div>
                                             <div className="email_content">
                                                 <div className="email_content_scroll">
                                                     <div className="left_email_handler"
                                                         onMouseEnter={() => horizontalSlideleft(this.email_scroll)}
                                                         onMouseLeave={() => stopTabScroll(this.email_scroll)}
-                                                    ><i class="fas fa-angle-left"></i></div>
+                                                    ><i className="fas fa-angle-left"></i></div>
                                                     <div className="email_scroll" ref={node => this.email_scroll = node}>
                                                         <img src="http://truck.vbrqx.com/dev/img/email/email_address.png" alt="email address" />
                                                     </div>
                                                     <div className="right_email_handler"
                                                         onMouseEnter={() => horizontalSlideRight(this.email_scroll)}
                                                         onMouseLeave={() => stopTabScroll(this.email_scroll)}
-                                                    ><i class="fas fa-angle-right"></i></div>
+                                                    ><i className="fas fa-angle-right"></i></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -87,7 +87,7 @@ class FlexSlider extends Component {
                                     <Grid.Column>
                                         <div className="phone">
                                             <div className="phone_icon">
-                                                <i class="fas fa-phone"></i>
+                                                <i className="fas fa-phone"></i>
                                             </div>
                                             <div className="phone_content">
                                                 <div className="phone_content_inner">
@@ -105,9 +105,9 @@ class FlexSlider extends Component {
                                     onMouseEnter={() => verticalSlideDown(this.caption_inner_scroll)}
                                     onMouseLeave={() => stopTabScroll(this.caption_inner_scroll)}
                                 >
-                                    <span><i class="fas fa-angle-up"></i></span>
-                                    <span><i class="fas fa-angle-up"></i></span>
-                                    <span><i class="fas fa-angle-up"></i></span>
+                                    <span><i className="fas fa-angle-up"></i></span>
+                                    <span><i className="fas fa-angle-up"></i></span>
+                                    <span><i className="fas fa-angle-up"></i></span>
                                 </div>
                                 <div className="caption_inner_scroll" ref={node => this.caption_inner_scroll = node}>
                                     <p>STARTS ONE --- Firts long description of the flat. Long lines of text. Multiple lines of text. Another text. More copy. Firts long description of the flat. Firts long description of the flat. Firts long description of the flat Firts long description of description of the flat of the flat. Firts long description of the flat. Firts long description of the flat Firts long description of the flat of the flat. Firts long description of the flat. Firts long description of the flat Firts long description of the flat of the flat. Firts long description of the flat. Firts long description of the flat Firts long description of the flat Firts long description of the flat --- FINISHES ONE
@@ -127,9 +127,9 @@ class FlexSlider extends Component {
                                     onMouseEnter={() => verticalSlideUp(this.caption_inner_scroll)}
                                     onMouseLeave={() => stopTabScroll(this.caption_inner_scroll)}
                                 >
-                                    <span><i class="fas fa-angle-down"></i></span>
-                                    <span><i class="fas fa-angle-down"></i></span>
-                                    <span><i class="fas fa-angle-down"></i></span>
+                                    <span><i className="fas fa-angle-down"></i></span>
+                                    <span><i className="fas fa-angle-down"></i></span>
+                                    <span><i className="fas fa-angle-down"></i></span>
                                 </div>
                                 </div>
                             </div>

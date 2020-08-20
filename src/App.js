@@ -9,6 +9,7 @@ import MiniTrucks from './components/MiniTrucks/MiniTrucks.js';
 import FlexSlider from './components/Slider/Slider.js';
 import Language from './components/Language/Language.js';
 import Link from './components/Link/Link.js';
+import Captcha from './components/Captcha/Captcha';
 
 class App extends Component {
   state = {
@@ -29,9 +30,9 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.props.middlecolumn)
     return(
       <Container fluid>
+        <Captcha />
         <Grid columns="equal">
             {window.innerWidth > 767 && <Grid.Column>
                 <MiniTrucks middlecolumn={this.state.middlecolumn} />
