@@ -41,7 +41,7 @@
     opacity: 1!important;
     filter: alpha(opacity=1);
     cursor: default;
-    z-index: 9999;
+    z-index: 99;
 }
 
 /* slider caption */

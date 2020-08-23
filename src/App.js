@@ -10,6 +10,7 @@ import FlexSlider from './components/Slider/Slider.js';
 import Language from './components/Language/Language.js';
 import Link from './components/Link/Link.js';
 import Captcha from './components/Captcha/Captcha';
+import PageInfoWrapper from './components/PageInfo/PageInfoWrapper.js';
 
 class App extends Component {
   state = {
@@ -29,9 +30,11 @@ class App extends Component {
       }
   }
 
+
   render() {
     return(
       <Container fluid>
+        <PageInfoWrapper />
         <Captcha />
         <Grid columns="equal">
             {window.innerWidth > 767 && <Grid.Column>
